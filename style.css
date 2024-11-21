@@ -1,0 +1,50 @@
+/* Full-page Background and Title */
+.stApp {
+    background: url("movie_main_image.jpg") no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.full-page-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #FF6347;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+}
+
+/* Section Styling */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4682B4;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+/* Fade-in Transitions */
+[data-testid="stMarkdownContainer"] {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Word Clouds */
+img {
+    transition: transform 0.2s;
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
